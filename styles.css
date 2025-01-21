@@ -1,0 +1,47 @@
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8cce7; /* Rosa claro */
+    font-family: 'Gastroline', sans-serif; /* Aplicando a fonte ao corpo */
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .nome {
+    font-size: 4rem;
+    color: rgba(252, 29, 66, 0.87); /* Cor definida corretamente */
+    opacity: 0;
+    animation: aparecer 2s ease-in-out forwards;
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    background-color:rgba(236, 234, 236, 0.521);
+    border: 1px solid #f08dc783;
+    padding: 10px 20px;
+    color: #ff0062;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 182, 193, 0.7);
+  }
